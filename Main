@@ -89,6 +89,12 @@ public class Main extends Application {
                         Patient.display_profile();
                 }
                 break;
+                
+                switch (subCommand[1].toLowerCase()){
+                case "appointments":
+                    Patient.display_appointments();
+                }
+            break;
 
             default:
                 System.out.println("invalid command");
